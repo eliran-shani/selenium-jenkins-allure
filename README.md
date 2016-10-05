@@ -1,4 +1,4 @@
-Selenium - Jenkins - Allure
+Selenium / Jenkins / Allure
 ======================
 
 
@@ -48,7 +48,7 @@ Allure reports
 
 Allure - an open-source framework designed to create test execution reports with good representation of test execution output
 
-> **Note**:  read more about **Py.Test** [here](http://doc.pytest.org/en/latest/)
+> **Note**:  read more about **Allure reports** [here](http://allure.qatools.ru/)
 
 
 Virtual Environment
@@ -79,4 +79,3 @@ Jenkins is an award-winning, cross-platform, continuous integration and continuo
 
 ----------
 
-For any questions / comments / feedback pls approach eliran.shani@blazemeter.com
