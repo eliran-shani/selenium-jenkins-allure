@@ -1,9 +1,6 @@
-
 .idea/.name
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
-requirementx.txt
 
-
-/screenshot
+*.pyc
