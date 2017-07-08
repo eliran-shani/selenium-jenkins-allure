@@ -75,7 +75,3 @@ Jenkins is an award-winning, cross-platform, continuous integration and continuo
 
 ----------
 
-[![](https://media.licdn.com/media/AAEAAQAAAAAAAAawAAAAJDFiODg3NDViLWU0YmMtNDA0ZC05OTAyLTI2ZTEyZTYzYjM1Zg.png)](https://www.blazemeter.com/)
-
-----------
-
