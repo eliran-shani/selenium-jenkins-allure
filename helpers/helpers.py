@@ -5,7 +5,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-# Constants
 now = moment.now().strftime("%d-%m-%Y")
 path = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 screen_dir = os.path.join(path, "screenshot", str(now))
@@ -28,21 +27,26 @@ def save_screenshot(driver, name):
     driver.get_screenshot_as_file(os.path.join(screen_path(), _name + '-' + now + ".png"))
 
 
+def find_element(driver, by_type, locator):
+    delay = 3  # seconds
+    try:
+        return WebDriverWait(driver, delay).until(EC.presence_of_element_located((by_type, locator)))
+
+    except TimeoutException:
+        print "element {} was not found".format(locator)
+
+
 def click(driver, by_type, locator):
-    el = driver.find_element(by_type, locator)
+    el = find_element(driver, by_type, locator)
     el.click()
 
 
 def type_text(driver, text, by_type, locator):
-    el = driver.find_element(by_type, locator)
+    el = find_element(driver, by_type, locator)
     el.click()
     el.send_keys(text)
 
 
-def wait_for_page_load(driver, by_type, locator):
-    delay = 3  # seconds
-    try:
-        myElem = WebDriverWait(driver, delay).until(EC.presence_of_element_located((by_type, locator)))
-        print "Page is ready!"
-    except TimeoutException:
-        print "Loading took too much time!"
+def get_text(driver, by_type, locator):
+    el = find_element(driver, by_type, locator)
+    return el.text

@@ -4,3 +4,4 @@
 .idea/workspace.xml
 
 *.pyc
+.idea/preferred-vcs.xml
