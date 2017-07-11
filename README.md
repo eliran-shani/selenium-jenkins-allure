@@ -66,6 +66,16 @@ requirements-txt - generate requirements.txt (python packages)
 > **Note**:  read more about **Requirements.txt** [here](https://pypi.python.org/pypi/requirements-txt)
 
 
+Docker
+-------------
+
+Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud.
+
+> **Note**:  read more about **Docker** [here](https://www.docker.com/what-docker)
+
+----------
+
+
 Jenkins
 -------------
 
