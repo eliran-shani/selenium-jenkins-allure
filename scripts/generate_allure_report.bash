@@ -5,7 +5,7 @@ ALLURE_IMAGE=automationwizards/allure:2.0-BETA1
 ALLURE_CONFIG_DIR=allure-config
 ALLURE_REPORT_DIR=allure-report
 ALLURE_RESULTS_DIR=allure-results
-PROJECT_DIR=${1:-bza-gui}
+PROJECT_DIR=${1:-blazedemo-app}
 
 # Delete any previous allure reports
 rm -rf $PROJECT_DIR/$ALLURE_REPORT_DIR
