@@ -1,7 +1,7 @@
 # coding=utf-8
+import helpers.helpers as utils
 import pytest
 from selenium.webdriver.common.by import By
-import helpers.helpers as utils
 
 
 def submit_form(driver):
